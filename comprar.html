@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketMax - Comprar Boletos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>TicketMax</h1>
+        <p>Tu boleto a los mejores eventos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ProyectoFinal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="comprar.html">Comprar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="formulario-compra">
+        <h2>Formulario de Compra de Boletos</h2>
+        <p>Completa tus datos para adquirir tus boletos</p>
+
+        <form action="#" method="post">
+
+            <article>
+                <h3>Datos Personales</h3>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez García">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="(222) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120" required>
+                </div>
+            </article>
+
+            <article>
+                <h3>Selección de Evento</h3>
+
+                <div class="form-group">
+                    <label for="evento">Seleccionar evento:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">-- Seleccione un evento --</option>
+                        <option value="concierto">Rosalia - $850</option>
+                        <option value="futbol">Sabrina Carpenter - $450</option>
+                        <option value="teatro">Ariana Grande - $650</option>
+                        <option value="festival">Billie Elish - $1,200</option>
+                        <option value="cine">Taylor Swift - $350</option>
+                        <option value="circo">Shawn Mendes - $300</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad de boletos:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="seccion">Sección preferida:</label>
+                    <select id="seccion" name="seccion" required>
+                        <option value="">-- Seleccione una sección --</option>
+                        <option value="vip">VIP</option>
+                        <option value="preferente">Preferente</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+            </article>
+
+            <article>
+                <h3>Método de Pago</h3>
+
+                <div class="form-group">
+                    <label>Seleccione método de pago:</label>
+
+                    <div class="radio-group">
+                        <input type="radio" id="tarjeta" name="pago" value="tarjeta" required>
+                        <label for="tarjeta">Tarjeta de Crédito/Débito</label>
+                    </div>
+
+                    <div class="radio-group">
+                        <input type="radio" id="transferencia" name="pago" value="transferencia">
+                        <label for="transferencia">Transferencia Bancaria</label>
+                    </div>
+
+                    <div class="radio-group">
+                        <input type="radio" id="efectivo" name="pago" value="efectivo">
+                        <label for="efectivo">Pago en Efectivo</label>
+                    </div>
+
+                </div>
+            </article>
+
+            <button type="submit" class="btn-comprar">Proceder al Pago</button>
+
+        </form>
+    </section>
+
+    <aside class="resumen-compra">
+        <h3>Resumen de Compra</h3>
+        <p>Aquí aparecerá el resumen de tu compra una vez selecciones un evento.</p>
+        <ul>
+            <li>Evento: -</li>
+            <li>Cantidad: -</li>
+            <li>Subtotal: $0.00</li>
+            <li>Cargos por servicio: $0.00</li>
+            <li><strong>Total: $0.00 MXN</strong></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2025 TicketMax - Todos los derechos reservados</p>
+        <p>Puebla, México | Contacto: info@ticketmax.com | Tel:+52 222 716-2701</p>
+    </footer>
+
+</body>
+</html>

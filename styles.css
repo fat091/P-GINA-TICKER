@@ -1,0 +1,191 @@
+¿html {
+    font-size: 16px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+    border-bottom: 4px solid black;
+}
+
+header h1 {
+    font-size: calc(16px + 1vw);
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background-color: gray;
+    padding: 8px 6vw;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 19.2px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 9.6px 19.2px;
+    border-radius: 9.6px;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: dodgerblue;
+}
+
+section {
+    background-color: white;
+    padding: 32px;
+    margin: 32px auto;
+    width: 75%; 
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    border-radius: 9.6px;
+}
+
+section.hero {
+    background-color: lightblue;
+    text-align: center;
+    min-height: 55vh; 
+    padding-top: 5vh;
+}
+
+section.hero h2 {
+    font-size: calc(24px + 1vw);
+}
+
+section.hero p {
+    font-size: 17.6px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: tomato;
+    border: 2.4px solid darkred;
+    color: white;
+    padding: 12.8px 48px;
+    border-radius: 16px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-comprar:hover {
+    background-color: #e33424;
+}
+
+.eventos-grid {
+    text-align: center;
+}
+
+.evento-card {
+    display: inline-block;
+    width: 320px;    
+    max-width: 50vw; 
+    padding: 19.2px;
+    margin: 19.2px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    vertical-align: top;
+    box-shadow: 0 4.8px 12.8px rgba(0,0,0,0.15);
+}
+
+.evento-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.evento-card h3 {
+    font-size: 20px;
+}
+
+aside {
+    background-color: white;
+    padding: 32px;
+    margin: 32px auto;
+    width: 75%;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    border-radius: 9.6px;
+}
+
+aside h3 {
+    font-size: calc(20.8px + 0.5vw);
+}
+
+.formulario-compra,
+.formulario-contacto {
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 11.2px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+textarea {
+    min-height: 128px;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 12.8px 32px;
+    font-size: 16px;
+    border-radius: 9.6px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 24px;
+    text-align: center;
+    font-size: 14.4px;
+}
